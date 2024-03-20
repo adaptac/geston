@@ -1,0 +1,1048 @@
+.marker {
+  background-image: url('../img/mapbox-icon.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.for_pdfc {
+    
+    overflow-y: scroll;
+    max-height: 600px;
+    width: 90%;
+    
+}
+
+.update_right i {
+    
+    color: blue;
+    
+}
+
+.update_wrong i {
+    
+    color: red;
+    
+}
+
+#ppayment tr{
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+#ppayment th{
+
+    text-align: right;
+    border-right: 1px solid black;
+    padding-right: 21px;
+    width: 30%;
+    font-size: 13px;
+
+}
+
+#ppayment td{
+
+    padding-left: 21px;
+    width: 70%;
+    font-size: 10px;
+
+}
+
+/*Estilo do bootstrap input file so para ocultar */
+.btn-file {
+    
+    background: #f96332;
+    
+}
+.fileinput-remove-button, .file-footer-buttons, .file-upload-indicator, .file-actions{
+
+    display: none;
+
+}
+.file-preview-frame {
+
+    width: 98%;
+    margin-left: 5%;
+
+}
+.file-thumbnail-footer {
+
+    padding-bottom: 0;
+
+}
+.kv-file-content {
+
+    margin: 0 auto;
+
+}
+
+
+/*Estilo para tabs*/
+
+#mosttabs, #usertabs, #booktabs, #documenttabs, #borrowingtabs, #loggedusertabs, #reservastabs{
+
+  border: 0;
+  background: #fff;
+          
+}
+
+#mosttabs{
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
+}
+
+#usertabs .nav-link, #booktabs .nav-link, #documenttabs .nav-link, #borrowingtabs .nav-link, #loggedusertabs .nav-link, #mosttabs .nav-link, #reservastabs .nav-link{
+
+  height: 40px;
+  padding: 12px 35px;
+  font-size: 10px;
+  color: #ccc;
+  outline: 0;
+
+}
+          
+#usertabs .nav-link.active, #booktabs .nav-link.active, #documenttabs .nav-link.active, #borrowingtabs .nav-link.active, #loggedusertabs .nav-link.active, #mosttabs .nav-link.active, #reservastabs .nav-link.active{
+
+  border: 0;
+  border-bottom: 1px solid #f96332;
+  color: #f96332;
+  transition:border-color 0.8s;
+  outline: 0;
+
+}
+
+/*Fim do estilo para tabs*/
+
+/*Estilo para tabelas*/
+
+table{
+    
+    cursor: pointer;
+    
+}
+
+.table thead tr th{
+
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+.table tbody tr td{
+
+    font-size: 10px;
+    padding: 3px;
+    border-bottom: 1px solid #eee;
+
+}
+.btn-xs{
+
+    background: white;
+    border: 1px solid #a0a0a0;
+    padding: 1px 9px;
+    color: #a0a0a0;
+
+}
+    
+
+/*Fim de estilo para tabelas*/
+
+/*Estilo para paginacao */
+.paginacao{
+
+  padding-bottom: 3px;
+  padding-top: 12px;
+
+}
+
+.paginacao a {
+
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    border-radius: 20px;
+    color: #a0a0a0;
+    height: 24px;
+    margin: 0 2px;
+    min-width: 24px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.paginacao a.jp-previous, .paginacao a.jg-next{
+
+
+}
+
+.paginacao .jp-disabled{
+
+    border: 1px solid #ccc;
+    color: #ccc;
+
+}
+
+.paginacao a.jp-current{
+
+    background: #f96332;
+    border: 1px solid #f96332;
+    color: white;
+
+}
+
+
+/*Fim para o estilo para paginacao*/
+
+.filter-option-inner-inner{
+    
+    color: #fff;
+    
+}
+
+/*Estilo para botpes tipo radio e switches*/
+
+.contentor {
+    display: inline;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 9px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.contentor input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+
+}
+
+/* On mouse-over*/
+.contentor:hover input ~ .checkmark {
+    
+  background-color: #f96332;
+
+}
+
+/* When the radio button is checked */
+.contentor input:checked ~ .checkmark {
+
+  background-color: #f96332;
+
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    
+  content: "";
+  position: absolute;
+  display: none;
+
+}
+
+/* Show the indicator (dot/circle) when checked */
+.contentor input:checked ~ .checkmark:after {
+    
+  display: block;
+
+}
+.contentor.radio_forreport .checkmark:after {
+    
+    background: white;
+    
+}
+/* Style the indicator (dot/circle) */
+.contentor .checkmark:after {
+
+  top: 1px;
+  left: 1px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
+
+}
+
+.bootstrap-switch {
+  display: inline-block;
+  direction: ltr;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 0;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  margin-bottom: 5px;
+  line-height: 8px;
+  width: 61px !important;
+  height: 26px;
+  outline: none;
+  z-index: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.bootstrap-switch .bootstrap-switch-container {
+  display: inline-flex;
+  top: 0;
+  height: 26px;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  width: 100px !important;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block !important;
+  height: 100%;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 8px;
+  text-indent: -5px;
+  line-height: 15px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off {
+  text-align: center;
+  z-index: 1;
+  float: left;
+  width: 50% !important;
+  background-color: #66615B;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  color: #fff;
+  background: #51cbce;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info {
+  color: #fff;
+  background: #447DF7;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success {
+  color: #fff;
+  background: #7AC29A;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-warning,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-warning {
+  background: #FFA534;
+  color: #fff;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger {
+  color: #fff;
+  background: #FB404B;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+  color: #fff;
+  background: #cfcfca;
+}
+
+.bootstrap-switch .bootstrap-switch-label {
+  text-align: center;
+  z-index: 100;
+  color: #333333;
+  background: #ffffff;
+  width: 22px !important;
+  height: 22px;
+  margin: 2px -11px;
+  border-radius: 12px;
+  position: relative;
+  float: left;
+  padding: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 1px #FFFFFF inset, 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-off {
+  text-indent: 6px;
+}
+
+.bootstrap-switch input[type='radio'],
+.bootstrap-switch input[type='checkbox'] {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: -1;
+}
+
+.bootstrap-switch input[type='radio'].form-control,
+.bootstrap-switch input[type='checkbox'].form-control {
+  height: auto;
+}
+
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-mini .bootstrap-switch-label {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-small .bootstrap-switch-label {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-large .bootstrap-switch-label {
+  padding: 6px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.bootstrap-switch.bootstrap-switch-disabled,
+.bootstrap-switch.bootstrap-switch-readonly,
+.bootstrap-switch.bootstrap-switch-indeterminate {
+  cursor: default !important;
+}
+
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-label {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default !important;
+}
+
+.bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-on {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-off {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-container {
+  margin-left: -2px !important;
+}
+
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-container {
+  margin-left: -37px !important;
+}
+
+.bootstrap-switch.bootstrap-switch-on:hover .bootstrap-switch-label {
+  width: 26px !important;
+  margin: 2px -15px;
+}
+
+.bootstrap-switch.bootstrap-switch-off:hover .bootstrap-switch-label {
+  width: 26px !important;
+  margin: 2px -15px -13px -11px;
+}
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-handle-off {
+  background-color: #66615B;
+}
+
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-handle-on {
+  background-color: #cfcfca;
+}
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-danger ~ .bootstrap-switch-default {
+  background-color: #FB404B;
+}
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-warning ~ .bootstrap-switch-default {
+  background-color: #FFA534;
+}
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-success ~ .bootstrap-switch-default {
+  background-color: #7AC29A;
+}
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-primary ~ .bootstrap-switch-default {
+  background-color: #51cbce;
+}
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-info ~ .bootstrap-switch-default {
+  background-color: #447DF7;
+}
+
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-danger,
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-primary,
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-info,
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-warning,
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-success {
+  background-color: #cfcfca;
+}
+/*Fim do estilo para botoes tipo radio e switches*/
+
+/*Estilo para resultado de pesquisa livros*/
+
+.searchitem{
+
+  margin-right: 35px;
+
+}
+
+ul{
+
+  list-style: none;
+
+}
+
+#favoritos h3, #reservas h3, #emprestimos h3, #pesquisasimples h3{
+
+    font-size: 18px;
+    margin: 12px 0 12px 12px;
+
+}
+.searchitem .cover, .cover{
+
+  border: 1px solid #E3E3E3;
+  box-shadow: 0px 1px 1px 1px #E3E3E3;
+  min-height: 160px;
+  max-height: 170px;
+
+}
+
+.cover button{
+    
+    position: absolute;
+    top: 0;
+    
+}
+
+.searchitem .buttons{
+    
+    background: transparent; 
+    padding: 3px;
+    min-height: 150px; 
+    position: absolute;
+    right: 25px;
+    top: 0;
+    
+}
+
+.searchitem .buttons button{
+
+  background: transparent;
+  border: 1px solid #E3E3E3;
+  color: #E3E3E3;
+  display: block;
+}
+
+.searchitem .simpledetails{
+
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  min-height: 140px;
+
+}
+
+.searchitem .moredetails{
+
+  padding: 3px;
+  padding-bottom: 0;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+.searchitem .moredetails .title, .moredetails .title{
+
+  border: 1px solid #E3E3E3;
+  text-transform: uppercase;
+  min-height: 13px;
+  font-size: 11px;
+  padding: 0;
+  padding-left: 3px;
+
+}
+
+.btn-just-icon {
+
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  padding: 8px;
+
+}
+.btn-just-icon.btn-sm {
+
+  padding: 4px !important;
+
+}
+  
+.hidetab{
+
+  display: none;
+
+}
+
+.badge{
+    
+  position: relative;
+  top: -3px;
+  left: -10px;
+  display: inline-block;;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background: #f00;
+  border-radius: 10px;
+
+}
+.bookbadge{
+  position: relative;
+  top: -175px;
+  left: -8px;
+  display: inline-block;;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 2px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background: rgba(255, 0, 0, 0.8);
+  border-radius: 10px;
+  display: block;
+}
+
+/*Fim do estilo de resultados de pesquisa*/
+
+/*Estilo para visualizar detalhes de um livro*/
+
+.maindetails{
+
+  margin-top: 3px;
+
+}
+
+.bookcover {
+
+  height: 150px;
+  margin-bottom: 3px;
+
+}
+
+.bookcover img{
+
+  width: 99%;
+  height: 100%;
+  border: 1px solid #000;
+
+}
+.bookdetails{
+
+  margin-bottom: 3px;
+
+}
+
+.bookdetails .book_title{
+
+  font-size: 13px;
+  box-shadow:1px 1px 1px 1px #495057;
+
+}
+.bookattribute p{
+
+  text-align: right;
+  margin-bottom: 0;
+
+}
+
+/*Fim para visualizar detalhes de um livro*/
+
+/*Estilo para imagens*/
+
+.img-rounded {
+  border-radius: 12px;
+  transition: opacity 0.5s ease 0s;
+  max-width: 100%;
+}
+
+.img-details {
+  min-height: 50px;
+  padding: 0 4px 0.5em;
+}
+
+.img-details img {
+  width: 50px;
+}
+
+.img-details .author {
+  margin-left: 10px;
+  margin-top: -21px;
+  width: 40px;
+}
+
+.img-circle {
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 50% !important;
+  max-width: 100%;
+}
+
+.img-thumbnail {
+  border: 0 none;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(164, 158, 147, 0.6);
+  margin-bottom: 10px;
+}
+
+.img-no-padding {
+  padding: 0px;
+}
+
+.example-page .img-rounded {
+  margin: 50px 0 20px;
+}
+
+.img-shadow {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.images-title {
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+
+/*Fim do estilo para imagens*/
+
+/*Estilo para notificacoes e usuarios online*/
+
+.loggeduser, .notification{
+
+  border-bottom: 1px solid #E3E3E3;
+  min-height: 60px;
+
+}
+
+.loggeduserdetails{
+    
+  background: red;
+
+}
+
+.blockbutton{
+    
+  background: yellow;
+  
+}
+
+/*Fim do estilo para notificacaoes e usuarios onlline*/
+
+
+/**Estilo para fases para insercao de dados*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+}
+
+
+/***** Top content *****/
+
+.top-content { padding: 0; line-height: 30px; text-align: center;}
+
+.top-content .text { color: #fff; }
+.top-content .text h1 { color: #fff; }
+.top-content .description { margin: 0; }
+.top-content .description p { opacity: 0.8; }
+.top-content .description a { color: #fff; }
+.top-content .description a:hover, 
+.top-content .description a:focus { border-bottom: 1px dotted #fff; }
+
+.form-box { padding-top: 3px; }
+
+.f1, .f2 {
+  padding: 1px; background: #fff;
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.f1 h3, .f2 h3 { margin-top: 0; margin-bottom: 5px; text-transform: uppercase; }
+
+.f1-steps, .f2-steps { overflow: hidden; position: relative; margin-top: 20px; }
+
+.f1-progress, .f2-progress { position: absolute; top: 24px; left: 0; width: 100%; height: 1px; background: #ddd; }
+.f1-progress-line, .f2-progress-line { position: absolute; top: 0; left: 0; height: 1px; background: #f35b3f; }
+
+.f1-step, .f2-step { position: relative; float: left; width: 33.3333%; padding: 0 5px; }
+
+.f1-step-icon , .f2-step-icon {
+  display: inline-block; width: 40px; height: 40px; margin-top: 4px; background: #ddd;
+  font-size: 16px; color: #fff; line-height: 40px;
+  -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
+}
+.f1-step.activated .f1-step-icon, .f2-step.activated .f2-step-icon {
+  background: #fff; border: 1px solid #f35b3f; color: #f35b3f; line-height: 38px;
+}
+.f1-step.active .f1-step-icon, .f2-step.active .f2-step-icon {
+  width: 48px; height: 48px; margin-top: 0; background: #f35b3f; font-size: 22px; line-height: 48px;
+}
+
+.f1-step p , .f2-step p { color: #ccc; }
+.f1-step.activated p, .f2-step.activated p { color: #f35b3f; }
+.f1-step.active p, .f2-step.active p { color: #f35b3f; }
+
+.f1 fieldset, .f2 fieldset { display: none; text-align: left; }
+
+.f1-buttons, .f2-buttons { text-align: right; }
+
+.f1-buttons button, .f2-buttons button { background: transparent; color: #aaa; border: 1px solid #ddd; }
+
+.f1 .input-error, .f2 .input-error { border-color: #f35b3f; }
+
+
+/*Fim do estilo para fase de insercao de dados*/
+
+/*Estilo para uploader de imagem*/
+
+.picture-container {
+    
+  cursor: pointer;
+  text-align: center;
+
+}
+  
+.picture {
+
+  width: 106px;
+  height: 106px;
+  background-color: #999999;
+  border: 4px solid #CCCCCC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin: 5px auto;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  
+}
+.picture:hover {
+
+  border-color: #2ca8ff;
+
+}
+.picture input[type="file"] {
+
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+}
+
+.logo-mini img {
+
+	width:30px;
+	height:32px;
+
+}
+.sqrpicture img{
+    
+    border:1px solid #ccc; 
+    width:143px; 
+    height:167px;
+    
+}
+.sqrpicture input[type="file"] {
+
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+
+}
+.picture-src {
+
+  width: 100%;
+
+}
+
+/*Fim do estilo para uploader de imagens*/
+
+/*Estilo para o leitor de pdf's*/
+
+    span button{
+
+      width: 95px;
+      height: 150px;
+      margin-bottom: 3px;
+      background: transparent;
+      border: 1px solid black;
+      box-shadow: 1px 1px 1px #000;
+
+    }
+     .closebutton{
+
+
+
+     }
+    .documenttitle, .nextprevious{
+
+      font-size: 16px;
+      color: #495057;
+
+    }
+    .firstbar{
+
+      padding: 12px;
+
+    }
+    .pdfreaderContainer{
+
+      color: #E3E3E3;
+
+    }
+    .downloadprint button{
+
+      border: 1px solid #E3E3E3;
+      background: transparent;
+      font-size: 11px;
+      color: #495057;
+
+    }
+    
+    canvas{
+        
+        overflow-y: visible;
+        
+    }
+
+
+/*Fim para o estilo para o leitor de pdf*/
+
+/*Estilo para os botoes para rolar a pagina para baixo e para cima*/
+
+.side_btn{
+  
+  position: fixed;
+  text-align: center;
+  bottom: 50px;
+  right: 30px;
+  padding: 6px 12px;
+  outline: 0;  
+  border: 0px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-weight: normal;
+  font-size: 18px;
+
+}
+
+/*Fim do estilo para rolar a pagina para baixo e para cima*/
+
+@media only screen and (min-width: 320px) {
+
+
+
+}
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
+@media screen and (min-width: 700px) {
+
+
+
+}
+@media only screen and (min-width: 900px) {
+
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+
+}
